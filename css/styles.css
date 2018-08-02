@@ -1,0 +1,9 @@
+.scrollable-menu {
+    height: auto;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+th a {
+    display: block;
+}

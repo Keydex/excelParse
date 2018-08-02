@@ -1,0 +1,56 @@
+<html>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.7/xlsx.core.min.js"></script>
+<script src="./js/dataHandle.js"></script>
+<link rel="stylesheet" href="./css/styles.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<style>
+
+</style>
+
+<body>
+  <div class="container">
+    <h1 id="infoText">Insert your Excel File to Process</h1>
+    <br>
+    <input type="file" id="files" name="files"/></input>
+  </div>
+  <br>
+  <div class="container">
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Loading List
+      </button>
+      <div class="dropdown-menu scrollable-menu" id="dropDownNames" aria-labelledby="dropdownMenuButton">
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <h2 id="EmployeeName"></h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Conversation ID</th>
+          <th scope="col">Platform</th>
+          <th scope="col">Response Published Date</th>
+          <th scope="col">Type</th>
+          <th scope="col">Content</th>
+          <th scope="col">Response</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+
+</html>
