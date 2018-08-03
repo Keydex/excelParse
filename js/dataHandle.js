@@ -143,7 +143,7 @@ function drawData(key){
     content = sortedArray[key][i]['Post Responded to Content'];
     response = sortedArray[key][i]['Response Content'];
     lithiumLink = sortedArray[key][i]['LSW Conversation Link'];
-    tempTable.push('<tr><th scope="row"><a href="'+lithiumLink+'">'+ convID +'</a></th><td>'+platform+'</td><td>'+date+'</td><td>'+ type +'</td><th scope="row">'+ content +'</th><th scope="row">'+ response +'</th></tr>');
+    tempTable.push('<tr><th scope="row"><a href="'+lithiumLink+'" target="_blank">'+ convID +'</a></th><td>'+platform+'</td><td>'+date+'</td><td>'+ type +'</td><th scope="row">'+ content +'</th><th scope="row">'+ response +'</th></tr>');
   }
   for(i = 0; i < tempTable.length; i++){
     $("table tbody").append(tempTable[i]);
