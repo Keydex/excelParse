@@ -9,6 +9,7 @@ let sortedArray;
 function handleFile(e) {
      var files = e.target.files;
      var i, f;
+     $('#loadingIcon').show();
      infoText.innerText = 'Processing your Data...'
      for (i = 0, f = files[i]; i != files.length; ++i) {
          var reader = new FileReader();
@@ -30,6 +31,7 @@ function handleFile(e) {
             //Get the first column first cell value
              dataStore = result;
              infoText.innerText = 'Processing Complete';
+             $('#loadingIcon').hide();
              reduceAll();
          };
          reader.readAsArrayBuffer(f);
